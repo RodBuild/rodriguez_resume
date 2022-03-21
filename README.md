@@ -58,3 +58,6 @@ Eliseo Papa ([Twitter](http://twitter.com/elipapa)/[Github](http://github.com/el
 ### License
 
 [MIT License](https://github.com/elipapa/markdown-cv/blob/master/LICENSE)
+
+git config --global user.name "RodBuild"
+git config --global user.email "rodrigo.edwin@hotmail.com"
