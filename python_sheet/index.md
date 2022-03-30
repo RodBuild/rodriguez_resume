@@ -49,13 +49,15 @@ chart = alt.Chart(dat).encode(
 
 ## SKLEARN
 <p>Documentation: <a href="https://scikit-learn.org/stable/supervised_learning.html">scikit-learn.org</a></p>
+
 ``` python
 #creation of test/train data
 #X_pred = dwellings_ml.filter(df_features.query("f_values > .02").f_names.to_list(), axis = 1)
 X_pred = dwellings_ml.drop(['before1980', 'yrbuilt', 'parcel'], axis=1)
 y_pred = dwellings_ml.filter(["before1980"], axis = 1)
-
-# Use of models...
+```
+``` python
+#Use of models...
 X_train, X_test, y_train, y_test = train_test_split(
     X_pred,
     y_pred,
